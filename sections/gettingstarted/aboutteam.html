@@ -1,0 +1,66 @@
+<template class="task-template">
+  <section id="aboutteam-section" class="section js-section u-category-gettingstarted">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          About Our Team
+        </h1>
+     <h1>Page Heading</h1>
+    
+    <p>Use the HTML5 <code>main</code> element to wrap the central content of your page.</p>
+		
+		<h2>Page sub-heading</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam, sem vitae tincidunt lobortis, nibh tellus faucibus elit, sed imperdiet enim mauris eget felis. Donec a varius sapien, at mattis nunc.</p>
+    
+    <h2>Sub-heading</h2>
+    
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+    
+    <h2>Sub-heading</h2>
+    
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>      </div>
+    </header>
+
+    <div class="demo">
+      <div class="demo-wrapper">
+        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">Create a new window
+          <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
+        </button>
+        <div class="demo-box">
+          <div class="demo-controls">
+            <button class="demo-button" id="new-window">View Demo</button>
+          </div>
+          <p>The <code>BrowserWindow</code> module gives you the ability to create new windows in your app. This main process module can be used from the renderer process with the <code>remote</code> module, as is shown in this demo.</p>
+
+          <p>There are a lot of options when creating a new window. A few are in this demo, but visit the <a href="http://electron.atom.io/docs/api/browser-window">documentation<span class="u-visible-to-screen-reader">(opens in new window)</span></a> for the full list.</p>
+          <h5>Renderer Process</h5>
+     
+          <div class="demo-protip">
+            <h2>ProTip</h2>
+            <strong>Use an invisible browser window to run background tasks.</strong>
+            <p>You can set a new browser window to not be shown (be invisible) in order to use that additional renderer process as a kind of new thread in which to run JavaScript in the background of your app. You do this by setting the <code>show</code> property to <code>false</code> when defining the new window.</p>
+            <pre>
+
+
+   
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      require('./renderer-process/gettingstarted/do-something')
+    </script>
+
+  </section>
+</template>
