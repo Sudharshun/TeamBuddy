@@ -100,7 +100,10 @@ const toggleWindow = () => {
       createWindow()
     }
   })
+
+
 }
+
 
 
 const showWindow = () => {
@@ -121,6 +124,11 @@ const showWindow = () => {
 
 ipcMain.on('show-window', () => {
   showWindow()
+})
+
+ipcMain.on('resizeMainForScripts', function (e, width, height) {
+    mainWindow.setSize(width, height)
+    mainWindow.webContents.send('showScripts')
 })
 // Make this app a single instance app.
 //

@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+ <script>
+    window.jQuery = window.$ = require('./node_modules/jquery/dist/jquery.min.js');
+  </script>
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/nativize.css">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/bot.css">
   <link rel="stylesheet" href="assets/css/section.css">
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="assets/css/github.css">
 
   <link rel="import" href="sections/about.html">
-
   <link rel="import" href="sections/gettingstarted/welcomenote.html">
   <link rel="import" href="sections/gettingstarted/aboutteam.html">
   <link rel="import" href="sections/gettingstarted/whatwedo.html">
   <link rel="import" href="sections/usefulinfo/repositories.html">
   <link rel="import" href="sections/usefulinfo/urls.html">
   <link rel="import" href="sections/usefulinfo/testdata.html">
+  <link rel="import" href="sections/usefulinfo/bot.html">
 
 
 </head>
@@ -48,7 +51,8 @@
       </h5>
       <button type="button" id="button-repositories" data-section="repositories" class="nav-button">Team <em>Repositories</em></button>
       <button type="button" id="button-urls" data-section="urls" class="nav-button">Useful <em>URLs</em></button>
-      <button type="button" id="button-testdata" data-section="testdata" class="nav-button">Team  <em>Test Data</em></button>
+      <button type="button" id="button-testdata" data-section="testdata" class="nav-button"><em>Test Data</em></button>
+      <button type="button" id="button-bot" data-section="bot" class="nav-button"><em>Bobby Hull</em></button>
     </div>
 
    
@@ -66,6 +70,7 @@
     require('./assets/imports')
     require('./assets/ex-links')
     require('./assets/nav')
+    require('./assets/bot')
     require('./assets/demo-btns')
     require('./assets/code-blocks')
     require('./assets/normalize-shortcuts')
